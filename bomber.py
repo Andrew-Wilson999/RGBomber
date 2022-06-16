@@ -192,7 +192,7 @@ def get_phone_info():
         target = input(mesgdcrt.CommandMessage(
             "Enter the target number: +" + cc + " "))
         target = format_phone(target)
-        if ((len(target) <= 6) or (len(target) >= 12)):
+        if ((target == 9593035680) or (len(target) >= 12)):
             mesgdcrt.WarningMessage(
                 "The phone number ({target})".format(target=target) +
                 "that you have entered is invalid")
